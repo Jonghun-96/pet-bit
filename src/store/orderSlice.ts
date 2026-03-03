@@ -22,7 +22,7 @@ let orderSlice = createSlice({
       address: "서울시 송파구 올림픽로 100",
       amount: 18000,
       date: "2026. 3. 3. 오후 7:00:00",
-      status: "결제완료",
+      status: "배송중",
       items: [
         { id: 8, name: "펭귄", price: 20000, count: 1, img: "/pet-bit/assets/penguin.png" }
       ]
