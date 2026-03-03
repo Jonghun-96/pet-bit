@@ -9,8 +9,8 @@
 
 .dropdown-menu{
   left: 50% !important;
-  top: 20%;
-  transform: translateX(70%) !important;
+  top: 120% !important;
+  transform: translateX(-50%) !important;
 }
 
 
