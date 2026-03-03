@@ -12,18 +12,20 @@ const OrderManager = () => {
 
   const reduxOrders = useSelector((state: any) => state.order);
 
-  useEffect(() => {
-    const savedOrders = localStorage.getItem('petbit_orders');
-    if (savedOrders) {
-      setOrders(JSON.parse(savedOrders));
-    }
-    setOrders(reduxOrders)
-  }, []);
+useEffect(() => {
+  const savedOrders = localStorage.getItem('petbit_orders');
+  
+  if (savedOrders) {
+    setOrders(JSON.parse(savedOrders));
+  } else {
+    setOrders(reduxOrders);
+  }
+}, [reduxOrders]);
 
 
   const handleStatusChange = (orderId: any, newStatus: any) => {
     const updatedOrders = orders.map(order => 
-      order.orderId === Number(orderId) ? { ...order, status: newStatus } : order
+      order.orderId.toString() === orderId.toString() ? { ...order, status: newStatus } : order
     );
     
     setOrders(updatedOrders);
