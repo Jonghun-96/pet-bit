@@ -21,7 +21,13 @@ const initialState: AuthState = {
 
   users: localStorage.getItem('users')
     ? JSON.parse(localStorage.getItem('users')!)
-    : []
+    : [
+        { userId: 'Chulsoo', role: 'USER', status: 'active' },
+        { userId: 'dog_lover', role: 'USER', status: 'active' },
+        { userId: 'cat_master', role: 'USER', status: 'banned' }, 
+        { userId: 'bye_bye', role: 'USER', status: 'active' },
+        { userId: 'minji', role: 'USER', status: 'withDrawn' },
+    ]
 };
 
 
