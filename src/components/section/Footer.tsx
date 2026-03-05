@@ -20,7 +20,8 @@ function Footer() {
           <Col md={4} className="mb-3">
             <h5 className="fw-bold">Contact</h5>
             <p className="mb-0">Email : xcyui@naver.com</p>
-            <p className="mb-0">GitHub : 
+            <p className="mb-0">
+              GitHub :
               <a 
                 href="https://github.com/Jonghun-96" 
                 target="_blank" 
@@ -29,6 +30,11 @@ function Footer() {
               >
                 github.com/Jonghun-96
               </a>
+            </p>
+
+            <h5 className="fw-bold mt-3">Tech Stack</h5>
+            <p className="mb-0">
+              React · Redux Toolkit · React Router · Bootstrap
             </p>
           </Col>
 

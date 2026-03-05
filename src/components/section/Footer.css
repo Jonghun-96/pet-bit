@@ -13,4 +13,8 @@
 }
 
 
-
+@media (max-width: 767.2px) {
+  .footer{
+    height: 360px;
+  }
+}
